@@ -1,2 +1,7 @@
-# flex-grid
- 🍏 css study - flex , grid 
+# flex-grid study
+
+
+ ## Flex 
+  
+
+ ## Grid

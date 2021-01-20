@@ -1,7 +1,5 @@
 # flex-grid study
 
-
- ## Flex 
-  
-
- ## Grid
+## 📌 Flex
+  - [Flex](flex-grid/flex/flex.md)
+## 📌 Grid

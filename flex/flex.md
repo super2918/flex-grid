@@ -9,22 +9,46 @@ container는 flex가 영향을 받는 전체 공간이고, 설정된 속성에 �
 ### ◾️ display
 
 ```css
-  // display 속성
  .flex-container {
-  display: flex;
-  display: inline-flex;  
+   display: flex;
+   display: inline-flex;  
  }
 ```
 
-### ◾️  Flex-direction
+### ◾️ Flex-direction
 
 ```css
  .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
-    flex-direction: column;
-    flex-direction: column-reverse;
+   display: flex;
+   flex-direction: row;
+   flex-direction: row-reverse;
+   flex-direction: column;
+   flex-direction: column-reverse;
+ }
+```
+
+### ◾️ Flex-wrap
+
+```css
+ .flex-container {
+   display: flex;
+   flex-wrap: nowrap;
+   flex-wrap: wrap;
+   flex-wrap: wrap-reverse;
+ }
+```
+
+### ◾️ Justify-content
+
+```css
+ .flex-container {
+   display: flex;
+   justify-content: flex-start;
+   justify-content: flex-end;
+   justify-content: center;
+   justify-content: space-between;
+   justify-content: space-around;
+   justify-content: space-evenly;
  }
 ```
 

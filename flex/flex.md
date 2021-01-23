@@ -10,8 +10,8 @@ container는 flex가 영향을 받는 전체 공간이고, 설정된 속성에 �
 
 ```css
  .flex-container {
-   display: flex;
-   display: inline-flex;  
+    display: flex;
+    display: inline-flex;  
  }
 ```
 
@@ -19,11 +19,11 @@ container는 flex가 영향을 받는 전체 공간이고, 설정된 속성에 �
 
 ```css
  .flex-container {
-   display: flex;
-   flex-direction: row;
-   flex-direction: row-reverse;
-   flex-direction: column;
-   flex-direction: column-reverse;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
  }
 ```
 
@@ -31,10 +31,10 @@ container는 flex가 영향을 받는 전체 공간이고, 설정된 속성에 �
 
 ```css
  .flex-container {
-   display: flex;
-   flex-wrap: nowrap;
-   flex-wrap: wrap;
-   flex-wrap: wrap-reverse;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
  }
 ```
 
@@ -42,15 +42,28 @@ container는 flex가 영향을 받는 전체 공간이고, 설정된 속성에 �
 
 ```css
  .flex-container {
-   display: flex;
-   justify-content: flex-start;
-   justify-content: flex-end;
-   justify-content: center;
-   justify-content: space-between;
-   justify-content: space-around;
-   justify-content: space-evenly;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
  }
 ```
+### ◾️ align-items 
+
+```css
+ .flex-container {
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+ }
+```
+
+
 
 ### ℹ️ 브라우저별 지원 확인
 > https://caniuse.com/?search=CSS%20Flexible%20Box

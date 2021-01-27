@@ -63,6 +63,128 @@ container는 flex가 영향을 받는 전체 공간이고, 설정된 속성에 �
  }
 ```
 
+### ◾️ align-content
+
+```css
+ .flex-container {
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+ }
+```
+
+### ◾️ flex-grow
+
+```css
+ .flex-item {
+    flex-grow: 0; // 초기값
+ }
+```
+
+### ◾️ flex-shrink
+
+```css
+ .flex-item {
+    flex-grow: 1; // 초기값
+ }
+```
+
+### ◾️ flex
+
+```css
+ .flex-item {
+   /* Keyword values */
+   flex: auto;
+   flex: initial;
+   flex: none;
+
+   /* One value, unitless number: flex-grow */
+   flex: 2;
+
+   /* One value, length or percentage: flex-basis */
+   flex: 10em;
+   flex: 30%;
+
+   /* Two values: flex-grow | flex-basis */
+   flex: 1 30px;
+
+   /* Two values: flex-grow | flex-shrink */
+   flex: 2 2;
+
+   /* Three values: flex-grow | flex-shrink | flex-basis */
+   flex: 2 2 10%;
+ }
+```
+
+### ◾️ align-self
+
+```css
+ .flex-container {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+ }
+
+ .flex-item {
+   align-self: auto;
+   align-self: stretch;
+   align-self: flex-start;
+   align-self: flex-end;
+   align-self: center;
+   align-self: baseline;
+ }
+```
+
+### ◾️ oder
+- 접근성을 위함은 아니니 되도록 사용은 안함
+
+```css
+ .flex-container {
+   display: flex;
+ }
+
+ .flex-item:nth-child(1) {
+   order: 3;
+  }
+.flex-item:nth-child(2) {
+   order: 1;
+ }
+.flex-item:nth-child(3) {
+   order: 2;
+ }
+```
+
+### ◾️ z-index
+- 접근성을 위함은 아니니 되도록 사용은 안함
+
+```css
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  .flex-item {
+    opacity: 0.8;
+  }
+  .flex-item:nth-child(1) {
+    transform: scale(1.5);
+    z-index: 1;
+  }
+  .flex-item:nth-child(2) {
+    transform: scale(2);
+    z-index: 2;
+  }
+  .flex-item:nth-child(3) {
+    transform: scale(2.2);
+  }
+```
+
+
 
 
 ### ℹ️ 브라우저별 지원 확인

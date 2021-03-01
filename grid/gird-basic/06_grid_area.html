@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <link rel="stylesheet" href="default.css">
+  <style>
+    .grid-container {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 3fr 1fr;
+      /* 각각의 영역에 매칭을 한다. grid-area 속성으로 이름을 지정해주면 된다. 익스에서는 지원을 해주는 속성이 아니기 때문에 숫자, span을 해서 작성을 해야한다. */
+      grid-template-areas: 
+      ". header header"
+      "a main b"
+      ". . ."
+      /* "none none none" 빈칸일  경우, none 또는 .을 사용한다. */
+      "footer footer footer"
+    }
+    
+    .header {  grid-area: header; }
+    .sidebar-a { grid-area: a; }
+    .main-content { grid-area: main; }
+    .sidebar-b { grid-area: b; }
+    .footer { grid-area: footer; }
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header grid-item">Header</div>
+    <div class="sidebar-a grid-item">SideBar A</div>
+    <div class="sidebar-b grid-item">SideBar B</div>
+    <div class="main-content grid-item">Main</div>
+    <div class="footer grid-item">Footer</div>
+  </div>
+</body>
+</html>

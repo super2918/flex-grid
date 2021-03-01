@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <link rel="stylesheet" href="default.css">
+  <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background: blue;
+  }
+
+  .grid-item:nth-child(4) {
+    grid-column: 3; /* 기본은 한칸이기 때문에 한 칸일 경우는 뒤에 생략이 가능하다.*/
+    grid-row: 3 / 5;
+    background: red;
+  }
+
+  .grid-item:nth-child(6) {
+    grid-column: 3;
+    grid-row: 3;
+    /* 강제로 그 자리에 놓을 수 도 있다. 영역을 겹치는데 사용한다. 창조적인 효과를 사용할 수 있다. */
+  }
+
+  .grid-item:nth-child(7) {
+    grid-column: 1 / span 3; /* 3칸을 채워라 */
+    background: blueviolet;
+  } 
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+  </div>
+</body>
+</html>

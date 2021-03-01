@@ -8,9 +8,18 @@
   <style>
     .grid-container {
       display: grid;
-      /* grid-template-columns:  100px 300px 200px; */
-      grid-template-columns:  2fr 1fr 1fr;
+      /* display: inline-block; */
+      /* fr: fraction 분수, 부분, 파편, 분해하기  */
+
+      /* grid-template-columns: 1fr 2fr 1fr; */
+      /* grid-template-columns: 1fr 500px 1fr; */
+      /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+      /* grid-template-columns: repeat(3, 1fr 2fr 1fr); */
+      /* grid-template-rows: repeat(200, 100px 1fr 2fr; */
+      height: 100vh;
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
     }
   </style>
 </head>

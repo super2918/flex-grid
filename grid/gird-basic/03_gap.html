@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <link rel="stylesheet" href="default.css">
+  <style>
+  .grid-container {
+    display: grid;
+    /* grid-gap: 20px;  예전 버전 브라우저의 호환을 위해 같이 써놓긴 한다.*/
+    /* gap: 20px; 전체 간격 */
+    row-gap: 10px; /* row gap 행의 간격 */
+    column-gap: 2rem; /* row gap 행의 간격 */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
+    <div class="grid-item">D</div>
+    <div class="grid-item">E</div>
+    <div class="grid-item">F</div>
+    <div class="grid-item">G</div>
+    <div class="grid-item">H</div>
+    <div class="grid-item">I</div>
+  </div>
+</body>
+</html>
